@@ -10,8 +10,8 @@ function Header() {
                     <div className="row">
 
                         <div className="col-sm-4 col-md-4 col-lg-4">
-                            <div className='logo'>
-                                <a href="#">React App</a>
+                            <div className="logo">
+                                <Link to="/home">React App</Link>
                             </div>
                         </div>
 

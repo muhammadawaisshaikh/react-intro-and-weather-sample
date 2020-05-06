@@ -1,3 +1,8 @@
+.header {
+    background: #212121;
+    padding: 20px 0;
+}
+
 .header ul {
     display: flex;
     list-style: none;
@@ -5,4 +10,17 @@
 
 .header ul li {
     padding: 0 20px;
+}
+
+.logo a {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.header ul li a {
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: 5px;
 }

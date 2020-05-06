@@ -1,0 +1,58 @@
+.home {
+    padding: 10% 0;
+}
+
+.bgHead {
+    font-size: 150px;
+    font-weight: 800;
+    color: #252525;
+    position: absolute;
+    top: -100px;
+}
+
+.mainHead {
+    text-align: left;
+}
+
+.mainHead .content {
+    position: relative;
+    top: 30%;
+}
+
+.mainHead .content p ul {
+    list-style: none;
+    display: flex;
+}
+
+.mainHead .content p ul li {
+    padding: 0 10px;
+    border-right: 1px solid #e4e4e4;
+    opacity: 0.6;
+}
+
+.mainHead .content p ul li:first-child {
+    padding: 0 10px 0 0;
+}
+
+.mainHead .content p ul li:last-child {
+    border-right: 0;
+}
+
+.mainHead .content img.main {
+    width: 100%;
+    position: absolute;
+    top: -30%;
+    transform: translate(0, -20%);
+}
+
+.mainHead .content h2 {
+    font-size: 25px;
+}
+
+.mainHead .content h2 span {
+    padding: 0 0 0 5px;
+}
+
+.profile-img-mobile {
+    width: 100%;
+}
