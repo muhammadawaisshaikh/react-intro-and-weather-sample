@@ -1,0 +1,16 @@
+body {
+    background-color: #1b1b1b !important;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul li {
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul {
+    margin-bottom: 0 !important;
+    padding: 0;
+}
