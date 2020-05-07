@@ -11,13 +11,29 @@ class Weather extends React.Component{
         this.state = {
             data: {},
             position: {},
-            city: ''
+            country: ''
         };
     }
 
     componentDidMount() {
         this.getLocation();
-        // this.getCity();
+        this.getCity();
+    }
+
+    getWeather() {
+        let url = `http://api.openweathermap.org/data/2.5/weather?q=${this.state.country}&APPID=10d7d25ccfbedb061beec8dda88ccdd1`;
+
+        axios.get(url)
+        .then(response => {
+            console.log(response);
+
+            this.setState({
+                data: response
+            });
+        })
+        .catch(error => {
+            console.log(error)
+        });
     }
 
     getCity() {
@@ -28,8 +44,10 @@ class Weather extends React.Component{
             // console.log(response);
 
             this.setState({
-                city: response.data.geobytescountry
+                country: response.data.geobytescountry
             });
+
+            this.getWeather();
         })
         .catch(error => {
             console.log(error)
