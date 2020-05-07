@@ -1,7 +1,6 @@
 import React from 'react';
 import '../assets/css/home.css';
-
-import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 class Home extends React.Component {
 
@@ -55,6 +54,18 @@ class Home extends React.Component {
                         </div>
                     </div>
                 </div>
+
+                <div className="weather-icon">
+                    <Link to="/weather">
+                        <img src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png" />
+                    </Link>
+                </div>
+
+                <div className="dot one"></div>
+                <div className="dot two"></div>
+                <div className="dot three"></div>
+                <div className="dot four"></div>
+
             </div>
         );
     }

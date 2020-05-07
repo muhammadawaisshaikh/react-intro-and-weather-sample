@@ -24,3 +24,10 @@
     color: #fff;
     letter-spacing: 5px;
 }
+
+.nav {
+    position: fixed;
+    top: 50%;
+    right: -90px;
+    transform: rotate(90deg);
+}

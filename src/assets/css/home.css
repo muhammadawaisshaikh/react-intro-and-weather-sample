@@ -1,5 +1,6 @@
 .home {
     padding: 10% 0;
+    position: relative;
 }
 
 .bgHead {
@@ -55,4 +56,51 @@
 
 .profile-img-mobile {
     width: 100%;
+}
+
+.weather-icon {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.weather-icon img {
+    width: 80px;
+}
+
+.dot {
+    position: absolute;
+    border-radius: 20px;
+}
+
+.dot.one {
+    border: 10px solid #7652a7;
+    width: 70px;
+    height: 70px;
+    top: 20%;
+    left: 10%;
+}
+
+.dot.two {
+    border: 10px solid #f092bc;
+    width: 70px;
+    height: 70px;
+    top: 40%;
+    right: 10%;
+}
+
+.dot.three {
+    border: 10px solid #5998e2;
+    width: 60px;
+    height: 60px;
+    bottom: 20%;
+    left: 30%;
+}
+
+.dot.four {
+    border: 10px solid #f092bc;
+    width: 60px;
+    height: 60px;
+    top: 20%;
+    left: 50%;
 }

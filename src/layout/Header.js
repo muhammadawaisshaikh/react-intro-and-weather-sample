@@ -11,7 +11,7 @@ function Header() {
 
                         <div className="col-sm-4 col-md-4 col-lg-4">
                             <div className="logo">
-                                <Link to="/home">React App</Link>
+                                <Link to="/home">React Weather App</Link>
                             </div>
                         </div>
 
