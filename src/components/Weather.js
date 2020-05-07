@@ -96,14 +96,12 @@ class Weather extends React.Component{
                             <div className="col-md-12">
                                <h1>Weather</h1>
 
-                                <form>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">City Name</label>
-                                        <input type="text" class="form-control" placeholder="Pakistan" onChange={(event) => {this.onCountryChange(event)}} />
-                                        <small class="form-text text-muted">Just type city name to find the updated weather</small>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary px-5" onClick={() => {this.findWeather()}}>Find</button>
-                                </form>
+                                <div className="form-group">
+                                    <label>City Name</label>
+                                    <input type="text" className="form-control" placeholder="Pakistan" onChange={(event) => {this.onCountryChange(event)}} />
+                                    <small className="form-text text-muted">Just type city name to find the updated weather</small>
+                                </div>
+                                <button className="btn btn-primary px-5" onClick={() => {this.findWeather()}}>Find</button>
 
                                 <h2 className="py-5">Country: <b><i>{this.state.country}</i></b></h2>
 
