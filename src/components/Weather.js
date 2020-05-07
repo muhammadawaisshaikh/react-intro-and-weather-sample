@@ -9,11 +9,48 @@ class Weather extends React.Component{
         super(props);
 
         this.state = {
-            data: {}
+            data: {},
+            position: {},
+            city: ''
         };
     }
 
     componentDidMount() {
+        this.getLocation();
+        // this.getCity();
+    }
+
+    getCity() {
+        let url = "http://gd.geobytes.com/GetCityDetails";
+
+        axios.get(url)
+        .then(response => {
+            // console.log(response);
+
+            this.setState({
+                city: response.data.geobytescountry
+            });
+        })
+        .catch(error => {
+            console.log(error)
+        });
+    }
+
+    getLocation() {
+        let locate = '';
+
+        if (navigator.geolocation) {
+            // console.log(navigator.geolocation.getCurrentPosition(this.showPosition));
+            locate = navigator.geolocation.getCurrentPosition(this.showPosition);
+
+        } else { 
+            locate = 'No Location';
+            console.log(locate);
+        }
+    }
+
+    showPosition(position) {
+        console.log(position);
     }
 
 
@@ -21,7 +58,7 @@ class Weather extends React.Component{
         return(
             <div>
                 
-                <div className="home">
+                <div className="weather">
                     <div className="container">
                         <div className="row">
 

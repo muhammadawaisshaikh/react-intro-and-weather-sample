@@ -1,1 +1,1 @@
-# qr-scanner-reactjs
+# Sample React App
