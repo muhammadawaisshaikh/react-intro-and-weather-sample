@@ -32,17 +32,14 @@ class Home extends React.Component {
                                             <h2>
                                                 I'm a Full Stack Developer
                                             </h2>
-                                            <p>
-                                                <ul>
-                                                    <li>Angular</li>
-                                                    <li>React</li>
-                                                    <li>Javascript</li>
-                                                    <li>Typescript</li>
-                                                    <li>Ruby on Rails</li>
-                                                    <li>UI/UX</li>
-                                                </ul>
-                                            </p>
-
+                                            <ul>
+                                                <li>Angular</li>
+                                                <li>React</li>
+                                                <li>Javascript</li>
+                                                <li>Typescript</li>
+                                                <li>Ruby on Rails</li>
+                                                <li>UI/UX</li>
+                                            </ul>
                                         </div>
                                     </div>
 

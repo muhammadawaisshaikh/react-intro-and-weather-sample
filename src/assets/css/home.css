@@ -19,22 +19,22 @@
     top: 30%;
 }
 
-.mainHead .content p ul {
+.mainHead .content ul {
     list-style: none;
     display: flex;
 }
 
-.mainHead .content p ul li {
+.mainHead .content ul li {
     padding: 0 10px;
     border-right: 1px solid #e4e4e4;
     opacity: 0.6;
 }
 
-.mainHead .content p ul li:first-child {
+.mainHead .content ul li:first-child {
     padding: 0 10px 0 0;
 }
 
-.mainHead .content p ul li:last-child {
+.mainHead .content ul li:last-child {
     border-right: 0;
 }
 
